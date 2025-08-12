@@ -94,7 +94,11 @@ export default function Layout({ children }) {
 
   return (
     <SidebarProvider>
-      <div className="min-h-screen flex w-full bg-gradient-to-br from-blue-50 via-orange-50 to-green-50">
+      <div className="min-h-screen flex w-full bg-gradient-to-br from-blue-50 via-orange-50 to-green-50 relative">
+        {/* Development Mode Indicator */}
+        <div className="fixed top-4 right-4 z-50 bg-green-500 text-white px-3 py-1 rounded-md text-sm font-medium shadow-lg">
+          🚀 LOCAL DEV MODE
+        </div>
         <style>{`
           :root {
             --primary-blue: #3B82F6;
